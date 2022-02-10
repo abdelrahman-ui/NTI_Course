@@ -1,6 +1,6 @@
 /***************************************************************************************
  *************************** - RCC_private.h				 ***************************
-***************************   -Created: 5/5/2021			 ***************************
+***************************   -Created: 1/5/2021			 ***************************
 ***************************   -Author: Abdelrahman_Magdy     ***************************
 ***************************   -Version : _1_				 ***************************
 ***************************   -Note :
@@ -82,7 +82,8 @@
 #define PERIPHERAL_EN_ETHMACRX          27
 #define PERIPHERAL_EN_ETHMACPTP         28
 #define PERIPHERAL_EN_OTGHS					  	29
-#define PERIPHERAL_EN_OTGHSULPI         30					
+#define PERIPHERAL_EN_OTGHSULPI         30	
+
 /* Macros Of :
 			         
 							- RCC AHB2 peripheral clock enable register (RCC_AHB2ENR)

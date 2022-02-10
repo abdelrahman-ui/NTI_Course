@@ -22,18 +22,18 @@ Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
 H:\00_NTI\03_TEST\03_APP\01_Blink_KIT\KIT.uvprojx
-Project File Date:  02/09/2022
+Project File Date:  02/10/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Rebuild target 'Target 1'
+compiling main.c...
 GPIO_program.c(25): warning: In file included from...
 ./GPIO_config.h(37): warning: no newline at end of file [-Wnewline-eof]
 #endif /* GPIO_CONFIG_H_ */
                            ^
 1 warning generated.
 compiling GPIO_program.c...
-compiling Delay_Program.c...
 RCC_program.c(68): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
                  default :
                  ^
@@ -60,17 +60,12 @@ RCC_program.c(300): warning: enumeration values 'AHB_Pre32' and 'AHB_Pre256' not
                                 ^
 8 warnings generated.
 compiling RCC_program.c...
-main.c(44): warning: for loop has empty body [-Wempty-body]
-        for( L_u8Count = 0  ; L_u8Count <500000U ; L_u8Count++);
-                                                               ^
-main.c(44): note: put the semicolon on a separate line to silence this warning
-1 warning generated.
-compiling main.c...
-assembling startup_stm32f429xx.s...
+compiling Delay_Program.c...
 compiling system_stm32f4xx.c...
+assembling startup_stm32f429xx.s...
 linking...
-Program Size: Code=1216 RO-data=444 RW-data=0 ZI-data=1632  
-".\Objects\KIT.axf" - 0 Error(s), 10 Warning(s).
+Program Size: Code=1264 RO-data=444 RW-data=0 ZI-data=1632  
+".\Objects\KIT.axf" - 0 Error(s), 9 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -96,12 +91,12 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.5.0
 
    * Component: Keil::Device:Startup:2.6.3
-      Source file:   MDK\Device\Source\ARM\STM32F42xxx_43xxx_OPT.s
       Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
-      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f429xx.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Source file:   MDK\Device\Source\ARM\STM32F42xxx_43xxx_OPT.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
-Build Time Elapsed:  00:00:12
+Build Time Elapsed:  00:00:16
 </pre>
 </body>
 </html>

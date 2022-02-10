@@ -384,6 +384,16 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>RCC_program.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\RCC_program.c</FilePath>
+            </File>
+            <File>
               <FileName>GPIO_program.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\GPIO_program.c</FilePath>
@@ -393,35 +403,30 @@
               <FileType>1</FileType>
               <FilePath>.\Delay_Program.c</FilePath>
             </File>
-            <File>
-              <FileName>RCC_program.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\RCC_program.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\main.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>LIN</GroupName>
           <Files>
             <File>
-              <FileName>BIT_MATH.h</FileName>
+              <FileName>RCC_private.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\BIT_MATH.h</FilePath>
+              <FilePath>.\RCC_private.h</FilePath>
+            </File>
+            <File>
+              <FileName>RCC_interface.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\RCC_interface.h</FilePath>
+            </File>
+            <File>
+              <FileName>RCC_config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\RCC_config.h</FilePath>
             </File>
             <File>
               <FileName>Delay_interface.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Delay_interface.h</FilePath>
-            </File>
-            <File>
-              <FileName>GPIO_config.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\GPIO_config.h</FilePath>
             </File>
             <File>
               <FileName>GPIO_interface.h</FileName>
@@ -434,19 +439,14 @@
               <FilePath>.\GPIO_private.h</FilePath>
             </File>
             <File>
-              <FileName>RCC_config.h</FileName>
+              <FileName>GPIO_config.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\RCC_config.h</FilePath>
+              <FilePath>.\GPIO_config.h</FilePath>
             </File>
             <File>
-              <FileName>RCC_interface.h</FileName>
+              <FileName>BIT_MATH.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\RCC_interface.h</FilePath>
-            </File>
-            <File>
-              <FileName>RCC_private.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\RCC_private.h</FilePath>
+              <FilePath>.\BIT_MATH.h</FilePath>
             </File>
             <File>
               <FileName>STD_TYPE.h</FileName>
