@@ -1,0 +1,107 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.35.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Abdelrahman Magdy, valeu, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.35.0.2
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.35.0.2
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+H:\00_NTI\03_TEST\03_APP\01_Blink_KIT\KIT.uvprojx
+Project File Date:  02/09/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+GPIO_program.c(25): warning: In file included from...
+./GPIO_config.h(37): warning: no newline at end of file [-Wnewline-eof]
+#endif /* GPIO_CONFIG_H_ */
+                           ^
+1 warning generated.
+compiling GPIO_program.c...
+compiling Delay_Program.c...
+RCC_program.c(68): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+                 default :
+                 ^
+RCC_program.c(113): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+                 default :
+                 ^
+RCC_program.c(156): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+                                        default         :  
+                                        ^
+RCC_program.c(192): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+                                         default : 
+                                         ^
+RCC_program.c(199): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+                        default         :  break;
+                        ^
+RCC_program.c(238): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+                default: break;
+                ^
+RCC_program.c(280): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+                        default: break;
+                        ^
+RCC_program.c(300): warning: enumeration values 'AHB_Pre32' and 'AHB_Pre256' not explicitly handled in switch [-Wswitch-enum]
+                        switch (AHB_Prescaler)
+                                ^
+8 warnings generated.
+compiling RCC_program.c...
+main.c(44): warning: for loop has empty body [-Wempty-body]
+        for( L_u8Count = 0  ; L_u8Count <500000U ; L_u8Count++);
+                                                               ^
+main.c(44): note: put the semicolon on a separate line to silence this warning
+1 warning generated.
+compiling main.c...
+assembling startup_stm32f429xx.s...
+compiling system_stm32f4xx.c...
+linking...
+Program Size: Code=1216 RO-data=444 RW-data=0 ZI-data=1632  
+".\Objects\KIT.axf" - 0 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\Pro\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\Pro\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK\Device\Source\ARM\STM32F42xxx_43xxx_OPT.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f429xx.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Build Time Elapsed:  00:00:12
+</pre>
+</body>
+</html>

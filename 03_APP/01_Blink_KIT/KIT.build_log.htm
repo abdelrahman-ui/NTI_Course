@@ -1,0 +1,95 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.35.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Abdelrahman Magdy, valeu, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.35.0.2
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.35.0.2
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.164.0.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+H:\00_NTI\03_TEST\03_APP\01_Blink_KIT\KIT.uvprojx
+Project File Date:  02/09/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+Delay_Program.c(24): warning: In file included from...
+./Delay_interface.h(40): warning: no newline at end of file [-Wnewline-eof]
+#endif //DELAY_INTERFACE_H
+                          ^
+1 warning generated.
+compiling Delay_Program.c...
+RCC_program.c(214): warning: enumeration values 'AHB_Pre32' and 'AHB_Pre256' not handled in switch [-Wswitch]
+                        switch (AHB_Prescaler)
+                                ^
+1 warning generated.
+compiling RCC_program.c...
+compiling GPIO_program.c...
+main.c(29): error: use of undeclared identifier 'GPIOG'
+        MGOIP_voidSetPinMode(GPIOG ,LED_GREEN,MODE_OUTPUT);
+                             ^
+main.c(30): error: use of undeclared identifier 'GPIOG'
+        MGOIP_voidSetPinMode(GPIOG ,LED_RED  ,MODE_OUTPUT);
+                             ^
+main.c(32): error: use of undeclared identifier 'GPIOG'
+        MGPIO_voidSetOutType(GPIOG ,LED_GREEN ,OUTPUT_TYPE_PUSH_PULL); 
+                             ^
+main.c(33): error: use of undeclared identifier 'GPIOG'
+        MGPIO_voidSetOutType(GPIOG ,LED_RED   ,OUTPUT_TYPE_PUSH_PULL);
+                             ^
+main.c(35): error: use of undeclared identifier 'GPIOG'
+  MGPIO_voidSetOutSpeed(GPIOG ,LED_GREEN ,OUTPUT_LOW_SPEED      );
+                        ^
+main.c(36): error: use of undeclared identifier 'GPIOG'
+        MGPIO_voidSetOutSpeed(GPIOG ,LED_RED   ,OUTPUT_LOW_SPEED        );
+                              ^
+main.c(40): error: use of undeclared identifier 'GPIOG'
+  MGPIO_voidWriteDataOdr(GPIOG ,LED_GREEN ,HIGH );
+                         ^
+main.c(41): error: use of undeclared identifier 'GPIOG'
+        MGPIO_voidWriteDataOdr(GPIOG ,LED_RED ,LOW );
+                               ^
+main.c(46): error: use of undeclared identifier 'GPIOG'
+  MGPIO_voidWriteDataOdr(GPIOG ,LED_GREEN ,LOW  );
+                         ^
+main.c(47): error: use of undeclared identifier 'GPIOG'
+        MGPIO_voidWriteDataOdr(GPIOG ,LED_RED,HIGH );
+                               ^
+main.c(44): warning: for loop has empty body [-Wempty-body]
+        for( L_u8Count = 0  ; L_u8Count <500000U ; L_u8Count++);
+                                                               ^
+main.c(44): note: put the semicolon on a separate line to silence this warning
+1 warning and 10 errors generated.
+compiling main.c...
+".\KIT.axf" - 10 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Pro\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>
