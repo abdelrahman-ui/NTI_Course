@@ -1,0 +1,8 @@
+STK_prog.c:14:6:MSTK_vInit	4	static
+STK_prog.c:23:6:MSTK_vBusyWait	16	static
+STK_prog.c:38:5:MSTK_u32ElapedTime	16	static
+STK_prog.c:49:5:MSTK_u32RemaningTime	16	static
+STK_prog.c:71:6:MSTK_vIntervalSingle	16	static
+STK_prog.c:87:6:MSTK_vIntervalPeriodic	16	static
+STK_prog.c:101:6:MSTK_voidStopInterval	4	static
+STK_prog.c:114:6:SysTick_Handler	8	static
