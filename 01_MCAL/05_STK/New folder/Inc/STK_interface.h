@@ -28,7 +28,8 @@
 #ifndef STK_INTERFACE_H
 #define STK_INTERFACE_H
 
-
+#include "STK_private.h"
+#include "STK_config.h"
 
 #define     MSTK_SRC_AHB           0U
 #define     MSTK_SRC_AHB_8         1U

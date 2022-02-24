@@ -1,0 +1,8 @@
+GPIO_program.c:51:7:MGOIP_voidSetPinMode	16	static
+GPIO_program.c:81:6:MGPIO_voidSetOutType	16	static
+GPIO_program.c:111:7:MGPIO_voidSetOutSpeed	16	static
+GPIO_program.c:140:7:MGPIO_voidSetPull	16	static
+GPIO_program.c:163:6:MGPIO_u8ReadData	24	static
+GPIO_program.c:193:7:MGPIO_voidWriteDataOdr	16	static
+GPIO_program.c:237:7:MGPIO_voidPinLock	16	static
+GPIO_program.c:294:6:MGOIP_voidPinSetAltFn	16	static

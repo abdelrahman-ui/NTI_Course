@@ -1,0 +1,6 @@
+EXTI_prog.c:42:6:MEXTI_vEnableLine	16	static
+EXTI_prog.c:70:6:MEXTI_vDisableLine	16	static
+EXTI_prog.c:85:6:MEXTI_vTriggerTyp	16	static
+EXTI_prog.c:115:6:MEXTI_vEventType	16	static
+EXTI_prog.c:140:6:MEXTI_vTrigFlag	16	static
+EXTI_prog.c:154:6:MEXTI_voidSelectPort	16	static

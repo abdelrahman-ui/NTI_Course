@@ -1,0 +1,11 @@
+NVIC_prog.c:39:6:MNVIC_VidEnablePeripheral	16	static
+NVIC_prog.c:45:6:MNVIC_VidDisablePeripheral	16	static
+NVIC_prog.c:52:6:MNVIC_VidSetPending	16	static
+NVIC_prog.c:59:6:MNVIC_VidClearPending	16	static
+NVIC_prog.c:66:6:MNVIC_u8GetActive	24	static
+NVIC_prog.c:80:6:MNVIC_voidSetEnable	16	static
+NVIC_prog.c:112:6:MNVIC_voidDisable	16	static
+NVIC_prog.c:140:6:MNVIC_voidSetPending	16	static
+NVIC_prog.c:168:6:MNVIC_voidClearPending	16	static
+NVIC_prog.c:196:5:MNVIC_voidGetActiveFlag	24	static
+NVIC_prog.c:227:6:MNVIC_voidSetPriority	16	static

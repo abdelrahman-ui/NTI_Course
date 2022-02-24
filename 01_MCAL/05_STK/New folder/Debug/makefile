@@ -48,6 +48,9 @@ default.size.stdout \
 OBJDUMP_LIST += \
 STK_Test.list \
 
+OBJCOPY_HEX += \
+STK_Test.hex \
+
 OBJCOPY_BIN += \
 STK_Test.bin \
 
@@ -74,6 +77,11 @@ STK_Test.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
+STK_Test.hex: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "STK_Test.hex"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 STK_Test.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "STK_Test.bin"
 	@echo 'Finished building: $@'
@@ -81,10 +89,10 @@ STK_Test.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 
 # Other Targets
 clean:
-	-$(RM) STK_Test.bin STK_Test.elf STK_Test.list default.size.stdout
+	-$(RM) STK_Test.bin STK_Test.elf STK_Test.hex STK_Test.list default.size.stdout
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_BIN)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX) $(OBJCOPY_BIN)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'
